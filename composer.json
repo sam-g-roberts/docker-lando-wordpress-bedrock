@@ -43,11 +43,6 @@
     "ext-gd": "*",
     "ext-mbstring": "*"
   },
-  "post-install-cmd": [
-    "cd web/app/themes/sage && composer install",
-    "cd web/app/themes/sage && yarn install",
-    "cd web/app/themes/sage && yarn run build"
-  ],
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
     "roave/security-advisories": "dev-master"
@@ -61,6 +56,11 @@
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
+    "post-install-cmd": [
+      "cd web/app/themes/sage && composer install",
+      "cd web/app/themes/sage && yarn install",
+      "cd web/app/themes/sage && yarn run build"
+    ],
     "post-root-package-install": [
       "php -r \"copy('.env.example', '.env');\""
     ],
