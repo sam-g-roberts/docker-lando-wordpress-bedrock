@@ -1,0 +1,22 @@
+name: bedrock
+recipe: wordpress
+proxy:                
+  theme:              # Optional: add this if you include the Sage specific config down below
+    - localhost:3000
+config:
+  php: '7.2'
+  via: nginx
+  webroot: web
+  database: mysql
+  xdebug: true
+
+# Add the following if you plan to use Sage as a starter theme
+services:
+  theme:
+    type: node
+    services:
+      ports:
+        - 3000:3000
+tooling:
+  yarn:
+    service: theme
