@@ -45,8 +45,8 @@
   },
   "post-install-cmd": [
     "cd web/app/themes/sage && composer install",
-    "cd web/app/themes/sage && npm install",
-    "cd web/app/themes/sage && npm run build"
+    "cd web/app/themes/sage && yarn install",
+    "cd web/app/themes/sage && yarn run build"
   ],
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
