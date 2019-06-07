@@ -24,7 +24,7 @@ This installation guide already assumes that you have both Docker and Lando inst
 First off your going to need to download the repository localy. Open up your terminal and Head to whichever folder you would like the project to be created.
 ```
 git clone git@git.xigen.co.uk:xigen/wordpress-bedrock-sage-lando.git
-cd wordpress-bedrock-sage-lando
+cd docker-lando-wordpress-bedrock
 ```
 
 if you need to make changes to the core repo before creating your new project do it now. Otherwise do.
